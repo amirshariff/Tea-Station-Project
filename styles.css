@@ -338,3 +338,56 @@ a {
 	}
 }
 /* end of products */
+
+/* contact */
+
+.contact {
+	padding-top: 2rem;
+}
+.contact-item {
+	margin-bottom: 3rem;
+}
+
+.contact-title {
+	color: var(--primaryColor);
+	font-family: var(--slantedText);
+	text-transform: uppercase;
+	letter-spacing: calc(var(--letterSpacing) * 2);
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+
+.contact-text {
+	text-transform: uppercase;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid var(--primaryColor);
+	outline: none;
+	margin: 2rem 0;
+	padding-top: 1.3rem 0;
+	font-size: 0, 85rem;
+	font-weight: bold;
+}
+
+.form-control::placeholder {
+	color: var(--primaryColor);
+	text-transform: uppercase;
+	letter-spacing: var(--letterSpacing);
+}
+
+@media screen and (min-width: 992px) {
+	.contact-info,
+	.contact-form {
+		float: left;
+		width: 50%;
+		padding: 0 1rem;
+	}
+	.contact-info {
+		padding-top: 2rem;
+	}
+}
+/* end of contact */
