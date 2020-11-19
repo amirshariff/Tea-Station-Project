@@ -33,7 +33,7 @@ a {
 	text-align: center;
 }
 
-.text.primary {
+.text-primary {
 	color: var(--primaryColor);
 }
 
@@ -65,7 +65,33 @@ a {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
+
+/* nav btn */
+.nav-btn{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	color: var(--primaryColor);
+	margin: 1rem 1.3rem;
+	font-size: 1.6rem;
+	animation: bounce 2s ease-in-out infinite;
+	cursor: pointer;
+}
+
+@keyframes bounce{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
 /* navbar */
+
 /* header */
 .header {
 	min-height: 100vh;
@@ -345,7 +371,7 @@ a {
 	padding-top: 2rem;
 }
 .contact-item {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .contact-title {
@@ -391,3 +417,26 @@ a {
 	}
 }
 /* end of contact */
+.footer {
+	background: var(--mainDark);
+	text-align: center;
+}
+
+.social-icon {
+	color: var(--mainWhite);
+	font-size: 1.3rem;
+	margin-right: 1rem;
+	transition: var(--mainTransition);
+}
+
+.social-icon:hover {
+	color: var(--primaryColor);
+}
+
+.footer-text {
+	text-transform: uppercase;
+	color: var(--mainWhite);
+	letter-spacing: var(--letterSpacing);
+	margin-top: 1rem;
+	font-size: 0.75rem;
+}

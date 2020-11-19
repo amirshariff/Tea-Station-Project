@@ -12,8 +12,14 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- nav button-->
-		<!-- navbar-->
+        <!-- nav button-->
+        <span class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+        </span>
+        <!-- navbar-->
+        <nav class="navbar" id="navbar">
+            
+        </nav>
 		<!-- header -->
 		<header class="header">
 			<div class="banner">
@@ -214,7 +220,10 @@
                 </article>
                 <!--contact form-->
                 <article class="contact-form">
-                    <form class="form-group">
+                    <form 
+                        action="https://formspree.io/amirshariff87@gmail.com" 
+                        method="POST" 
+                        class="form-group">
                         <input 
                         type="text" 
                         name="name" 
@@ -238,10 +247,36 @@
                         type="submit" 
                         class="main-btn"
                         >send
-                </button>
+                    </button>
                 </article>
-         </div>
+            </div>
         </section>
         <!--end of contact-->
+        <footer class="footer">
+           <div class="section-center">
+               <div class="social-icons">
+                   <!--social icon-->
+                   <a href="" class="social-icon">
+                       <i class="fab fa-facebook"></i>
+                   </a>
+                   <!--end social icon-->
+                   <!--social icon-->
+                   <a href="" class="social-icon">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <!--end social icon-->
+                   <!--social icon-->
+                   <a href="" class="social-icon">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <!--end social icon-->
+               </div>
+               <p class="footer-text">
+                   &copy; <span class="text-primary">
+                       tea station
+                   </span>. all rights are reserved
+               </p>
+           </div> 
+        </footer>
 	</body>
 </html>
