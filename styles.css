@@ -91,7 +91,46 @@ a {
 	}
 }
 /* navbar */
+.navbar	{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	background: var(--mainGrey);
+	padding-top: 1rem;
+	padding-left: 2rem;
+	transition: var(--mainTransition);
+	/* transform */
+	transform: translateX(-100%);
+}
+.nav-close{
+	font-size: 2rem;
+	cursor: pointer;
+}
 
+.nav-items{
+	list-style: none;
+}
+.nav-links{
+	display: block;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--primaryColor);
+	transition: var(--mainTransition);
+}
+.nav-links:hover{
+	color: var(--mainDark);
+	padding-left: 0.5rem;
+}
+
+@media screen and (min-width:768px){
+	.navbar{
+		width: 3vw;
+		max-width: 20rem;
+	}
+}
 /* header */
 .header {
 	min-height: 100vh;
