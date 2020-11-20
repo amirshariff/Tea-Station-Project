@@ -105,6 +105,9 @@ a {
 	/* transform */
 	transform: translateX(-100%);
 }
+.showNav{
+	transform: translateX(0);
+}
 .nav-close{
 	font-size: 2rem;
 	cursor: pointer;
